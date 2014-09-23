@@ -4,7 +4,7 @@ caseconv
 A very simple case converter in go
 
 
-### Installation
+### Install
     go get github.com/fredr/caseconv
     
 ### Test
