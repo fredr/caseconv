@@ -5,9 +5,7 @@ import (
 	"strings"
 )
 
-/*
-CamelCase to snake_case
-*/
+// CamelToSnake converts CamelCase to snake_case
 func CamelToSnake(str string) string {
 	snake1 := regexp.MustCompile("([A-Z])([A-Z][a-z])")
 	snake2 := regexp.MustCompile("([a-z])([A-Z])")
