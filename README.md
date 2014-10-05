@@ -11,13 +11,15 @@ A very simple case converter in go
     go test -v
 
 ### Use
-    package main
-    
-    import (
-      "fmt"
-      "github.com/fredr/caseconv"
-    )
-    
-    func main() {
-      fmt.Println(caseconv.CamelToSnake("HelloWorld"))
-    }
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/fredr/caseconv"
+)
+
+func main() {
+	fmt.Println(caseconv.CamelToSnake("HelloWorld"))
+}
+```
