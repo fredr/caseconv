@@ -12,6 +12,12 @@ func TestCamelToSnake(t *testing.T) {
 	shouldMatch(t, CamelToSnake, "LongABBRDescription", "long_abbr_description")
 }
 
+func BenchmarkCamelToSnake(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		CamelToSnake("BenchmarkCamelToSnake")
+	}
+}
+
 func shouldMatch(t *testing.T, convFn func(string) string, in, expected string) {
 	if res := convFn(in); res != expected {
 		t.Errorf("Expected %q to convert to %q, got %q", in, expected, res)
